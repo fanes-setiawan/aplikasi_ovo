@@ -1,5 +1,9 @@
 {
-    "modules": [],
+    "modules": [
+        "onboarding",
+        "verifikasi",
+        "security_code"
+    ],
     "module_directory_name": "module",
     "experimental_mode": false,
     "unfreezed": true
