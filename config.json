@@ -2,7 +2,10 @@
     "modules": [
         "onboarding",
         "verifikasi",
-        "security_code"
+        "security_code",
+        "help_center",
+        "terms_service",
+        "privacy_policy"
     ],
     "module_directory_name": "module",
     "experimental_mode": false,

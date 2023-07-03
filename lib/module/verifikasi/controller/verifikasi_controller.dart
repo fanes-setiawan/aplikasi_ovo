@@ -1,10 +1,17 @@
 import 'package:flutter/material.dart';
-import 'package:ovo/state_util.dart';
 import '../view/verifikasi_view.dart';
 
 class VerifikasiController extends State<VerifikasiView> {
   static late VerifikasiController instance;
   late VerifikasiView view;
+  final textEditingController = TextEditingController();
+  bool isTextFieldEmpty = true;
+
+  istext(String text) {
+    setState(() {
+      isTextFieldEmpty = text.isEmpty;
+    });
+  }
 
   @override
   void initState() {

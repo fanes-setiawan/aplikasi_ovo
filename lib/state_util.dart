@@ -8,7 +8,6 @@ class Get {
   static GlobalKey<NavigatorState> navigatorKey = GlobalKey<NavigatorState>();
 
   static get currentContext {
-    
     return navigatorKey.currentState?.context;
   }
 
