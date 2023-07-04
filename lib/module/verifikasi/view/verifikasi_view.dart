@@ -88,7 +88,91 @@ class VerifikasiView extends StatefulWidget {
                     ],
                   ),
                   TextButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      showModalBottomSheet(
+                          context: context,
+                          builder: (BuildContext build) {
+                            return Column(
+                              children: [
+                                SizedBox(height: 20),
+                                Container(
+                                  height: 200,
+                                  width: MediaQuery.of(context).size.width,
+                                  decoration: BoxDecoration(
+                                    image: DecorationImage(
+                                        image: AssetImage(
+                                            'assets/images/phone.png')),
+                                  ),
+                                ),
+                                Text(
+                                  "Mau ubah nomor HP?",
+                                  style: TextStyle(
+                                    color: AppColors.blackText,
+                                    fontSize: 20,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                                SizedBox(height: 10),
+                                Text(
+                                  "Isi nomor HP lama kamu dan lanjut verifikasi melalui email yang terdaftar di OVO.",
+                                  style: TextStyle(
+                                    color: AppColors.greyText,
+                                  ),
+                                  textAlign: TextAlign.center,
+                                ),
+                                SizedBox(height: 20),
+                                Padding(
+                                  padding: const EdgeInsets.all(10.0),
+                                  child: Row(
+                                    children: [
+                                      Expanded(
+                                        child: Container(
+                                          height: 50,
+                                          decoration: BoxDecoration(
+                                            color: Colors.white70,
+                                            borderRadius:
+                                                BorderRadius.circular(50),
+                                          ),
+                                          child: TextButton(
+                                            onPressed: () {},
+                                            child: Text(
+                                              "Nanti Aja",
+                                              style: TextStyle(
+                                                color: AppColors.purpleText,
+                                                fontWeight: FontWeight.bold,
+                                              ),
+                                            ),
+                                          ),
+                                        ),
+                                      ),
+                                      SizedBox(width: 10),
+                                      Expanded(
+                                        child: Container(
+                                          height: 50,
+                                          decoration: BoxDecoration(
+                                            color: AppColors.purple,
+                                            borderRadius:
+                                                BorderRadius.circular(50),
+                                          ),
+                                          child: TextButton(
+                                            onPressed: () {},
+                                            child: Text(
+                                              "Ubah",
+                                              style: TextStyle(
+                                                color: AppColors.whiteText,
+                                                fontWeight: FontWeight.bold,
+                                              ),
+                                            ),
+                                          ),
+                                        ),
+                                      )
+                                    ],
+                                  ),
+                                ),
+                              ],
+                            );
+                          });
+                    },
                     style: ButtonStyle(
                       padding: MaterialStateProperty.all<EdgeInsets>(
                           EdgeInsets.zero),
