@@ -5,7 +5,13 @@
         "security_code",
         "help_center",
         "terms_service",
-        "privacy_policy"
+        "privacy_policy",
+        "home",
+        "finance",
+        "pay",
+        "inbox",
+        "profile",
+        "navbar"
     ],
     "module_directory_name": "module",
     "experimental_mode": false,

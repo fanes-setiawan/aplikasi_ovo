@@ -266,7 +266,9 @@ class VerifikasiView extends StatefulWidget {
                           : AppColors.purple,
                     ),
                     child: TextButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Get.to(NavbarView());
+                      },
                       child: Text(
                         "Lanjutkan",
                         style: TextStyle(
