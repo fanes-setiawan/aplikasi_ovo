@@ -1,7 +1,6 @@
-import 'package:flutter/scheduler.dart';
-import 'package:ovo/core.dart';
-import 'package:ovo/state_util.dart';
 import 'package:flutter/material.dart';
+
+import 'core.dart';
 
 void main() {
   runApp(const MyApp());

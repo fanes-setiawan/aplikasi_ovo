@@ -190,7 +190,7 @@ class VerifikasiView extends StatefulWidget {
           ),
           Container(
             width: MediaQuery.of(context).size.width,
-            height: MediaQuery.of(context).size.height * 0.18,
+            height: MediaQuery.of(context).size.height * 0.20,
             decoration: BoxDecoration(
               color: AppColors.whiteButton,
               boxShadow: [

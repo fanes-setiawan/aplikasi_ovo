@@ -7,6 +7,7 @@ class AppColors {
   static const Color greyBg = Color(0xffEFEBFA);
   static const Color greyButton = Color(0xffD4D4D4);
   static const Color navbarColor = Color(0xff848388);
+  static const Color slBarColor = Color(0xffCDD2F2);
 
   // text color
   static const Color whiteText = Color(0xffFFFFFF);
