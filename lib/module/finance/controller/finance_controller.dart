@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:ovo/state_util.dart';
 import '../view/finance_view.dart';
 
 class FinanceController extends State<FinanceView> {

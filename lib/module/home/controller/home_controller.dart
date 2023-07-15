@@ -1,10 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:ovo/state_util.dart';
 import '../view/home_view.dart';
 
 class HomeController extends State<HomeView> {
   static late HomeController instance;
   late HomeView view;
+  int selectButtonIndex = 0;
+
+  onklik(int index) {
+    setState(() {
+      selectButtonIndex = index;
+    });
+  }
 
   @override
   void initState() {

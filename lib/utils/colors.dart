@@ -18,4 +18,5 @@ class AppColors {
 
   // button color
   static const Color whiteButton = Color(0xffFFFFFF);
+  static const Color purpleButton = Color(0x81C4C2C5);
 }

@@ -203,82 +203,85 @@ class VerifikasiView extends StatefulWidget {
             ),
             child: Padding(
               padding: const EdgeInsets.all(15.0),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    "Dengan masuk atau daftar,kamu udah setuju sama",
-                    style: TextStyle(
-                      color: AppColors.greyText,
+              child: SingleChildScrollView(
+                controller: ScrollController(),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      "Dengan masuk atau daftar,kamu udah setuju sama",
+                      style: TextStyle(
+                        color: AppColors.greyText,
+                      ),
                     ),
-                  ),
-                  Row(
-                    children: [
-                      TextButton(
-                        onPressed: () {
-                          Get.to(TermsServiceView());
-                        },
-                        style: ButtonStyle(
-                            padding: MaterialStateProperty.all<EdgeInsets>(
-                                EdgeInsets.zero)),
-                        child: Text(
-                          "Ketentuan Layanan",
+                    Row(
+                      children: [
+                        TextButton(
+                          onPressed: () {
+                            Get.to(TermsServiceView());
+                          },
+                          style: ButtonStyle(
+                              padding: MaterialStateProperty.all<EdgeInsets>(
+                                  EdgeInsets.zero)),
+                          child: Text(
+                            "Ketentuan Layanan",
+                            style: TextStyle(
+                              color: AppColors.blueLightText,
+                            ),
+                          ),
+                        ),
+                        Text(
+                          " dan ",
                           style: TextStyle(
-                            color: AppColors.blueLightText,
+                            color: AppColors.greyText,
+                          ),
+                        ),
+                        TextButton(
+                          onPressed: () {
+                            Get.to(PrivacyPolicyView());
+                          },
+                          style: ButtonStyle(
+                            padding: MaterialStateProperty.all(EdgeInsets.zero),
+                          ),
+                          child: Text(
+                            "Ketentuan Layanan",
+                            style: TextStyle(
+                              color: AppColors.blueLightText,
+                            ),
+                          ),
+                        ),
+                        Text(
+                          " OVO.",
+                          style: TextStyle(
+                            color: AppColors.greyText,
+                          ),
+                        ),
+                      ],
+                    ),
+                    Container(
+                      width: MediaQuery.of(context).size.width - 20,
+                      height: 50,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(60),
+                        color: controller.textEditingController.text.isEmpty
+                            ? AppColors.greyButton
+                            : AppColors.purple,
+                      ),
+                      child: TextButton(
+                        onPressed: () {
+                          Get.to(NavbarView());
+                        },
+                        child: Text(
+                          "Lanjutkan",
+                          style: TextStyle(
+                            color: AppColors.whiteText,
+                            fontSize: 18,
                           ),
                         ),
                       ),
-                      Text(
-                        " dan ",
-                        style: TextStyle(
-                          color: AppColors.greyText,
-                        ),
-                      ),
-                      TextButton(
-                        onPressed: () {
-                          Get.to(PrivacyPolicyView());
-                        },
-                        style: ButtonStyle(
-                          padding: MaterialStateProperty.all(EdgeInsets.zero),
-                        ),
-                        child: Text(
-                          "Ketentuan Layanan",
-                          style: TextStyle(
-                            color: AppColors.blueLightText,
-                          ),
-                        ),
-                      ),
-                      Text(
-                        " OVO.",
-                        style: TextStyle(
-                          color: AppColors.greyText,
-                        ),
-                      ),
-                    ],
-                  ),
-                  Container(
-                    width: MediaQuery.of(context).size.width - 20,
-                    height: 50,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(60),
-                      color: controller.textEditingController.text.isEmpty
-                          ? AppColors.greyButton
-                          : AppColors.purple,
-                    ),
-                    child: TextButton(
-                      onPressed: () {
-                        Get.to(NavbarView());
-                      },
-                      child: Text(
-                        "Lanjutkan",
-                        style: TextStyle(
-                          color: AppColors.whiteText,
-                          fontSize: 18,
-                        ),
-                      ),
-                    ),
-                  )
-                ],
+                    )
+                  ],
+                ),
               ),
             ),
           ),
