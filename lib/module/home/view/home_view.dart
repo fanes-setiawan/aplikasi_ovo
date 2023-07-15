@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:ovo/core.dart';
+import 'package:ovo/module/home/widget/carouselBanner.dart';
 import 'package:ovo/module/home/widget/tabBarMenu.dart';
 import '../controller/home_controller.dart';
 
@@ -10,7 +11,7 @@ class HomeView extends StatefulWidget {
   Widget build(context, HomeController controller) {
     controller.view = this;
     const collapsedBarHeight = 270.0;
-    const expandedBarHeight = 260.0;
+    const expandedBarHeight = 245.0;
 
     return Scaffold(
       backgroundColor: AppColors.slBarColor,
@@ -255,34 +256,38 @@ class HomeView extends StatefulWidget {
                 ),
               ),
               SliverToBoxAdapter(
-                child: Container(
-                  child: ConstrainedBox(
-                    constraints: BoxConstraints(
-                      minHeight: MediaQuery.of(context).size.height -
-                          collapsedBarHeight,
+                child: ConstrainedBox(
+                  constraints: BoxConstraints(
+                    minHeight:
+                        MediaQuery.of(context).size.height - collapsedBarHeight,
+                  ),
+                  child: Material(
+                    elevation: 7,
+                    color: AppColors.whiteButton,
+                    borderRadius: BorderRadius.only(
+                      topLeft: Radius.circular(20),
+                      topRight: Radius.circular(20),
                     ),
-                    child: Material(
-                      elevation: 7,
-                      color: AppColors.whiteButton,
-                      borderRadius: BorderRadius.only(
-                        topLeft: Radius.circular(20),
-                        topRight: Radius.circular(20),
-                      ),
-                      child: Column(
-                        children: [
-                          SizedBox(height: 10),
-                          TabBarMenu(),
-                          Container(
-                            width: MediaQuery.of(context).size.width,
-                            height: 10,
-                            color: AppColors.greyBg,
-                          )
-                        ],
-                      ),
+                    child: Column(
+                      children: [
+                        SizedBox(height: 10),
+                        TabBarMenu(),
+                        Container(
+                          width: MediaQuery.of(context).size.width,
+                          height: 8,
+                          color: AppColors.greyBg,
+                        ),
+                        CarouselBanner(),
+                        Container(
+                          width: MediaQuery.of(context).size.width,
+                          height: 8,
+                          color: AppColors.greyBg,
+                        ),
+                      ],
                     ),
                   ),
                 ),
-              )
+              ),
             ],
           )
         ],

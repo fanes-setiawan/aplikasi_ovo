@@ -64,7 +64,7 @@ class _TabBarMenuState extends State<TabBarMenu> {
                         "onTap": () {},
                       },
                       {
-                        "icon": "assets/icons/mobilebanking.svg",
+                        "icon": "assets/icons/Pascabayar.svg",
                         "label": "Pascabayar",
                         "onTap": () {},
                       },
