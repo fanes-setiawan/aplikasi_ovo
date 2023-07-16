@@ -19,7 +19,6 @@ class _TabBarMenuState extends State<TabBarMenu> {
           TabBar(
             labelPadding: EdgeInsets.zero,
             unselectedLabelStyle: TextStyle(
-              color: Colors.white,
               fontWeight: FontWeight.bold,
               fontSize: 14,
             ),
@@ -101,17 +100,8 @@ class _TabBarMenuState extends State<TabBarMenu> {
                           return SizedBox(
                             width: size,
                             height: size,
-                            child: ElevatedButton(
-                              style: ElevatedButton.styleFrom(
-                                foregroundColor: Colors.blueGrey,
-                                animationDuration:
-                                    const Duration(milliseconds: 1000),
-                                backgroundColor: Colors.transparent,
-                                splashFactory: InkSplash.splashFactory,
-                                shadowColor: Colors.transparent,
-                                elevation: 0.0,
-                              ),
-                              onPressed: () => item["onTap"](),
+                            child: InkWell(
+                              onTap: () => item["onTap"](),
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.center,
                                 mainAxisAlignment: MainAxisAlignment.center,

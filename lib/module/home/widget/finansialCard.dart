@@ -9,7 +9,6 @@ class FinancialCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: MediaQuery.of(context).size.width,
-      height: 220,
       child: Column(
         children: [
           Padding(
@@ -73,8 +72,11 @@ class FinancialCard extends StatelessWidget {
                         ),
                       ),
                       SizedBox(width: 20),
-                      SvgPicture.asset(
-                        "assets/icons/logograb.svg",
+                      Image.asset(
+                        "assets/images/Bareksa.png",
+                        width: 80,
+                        height: 30,
+                        fit: BoxFit.fill,
                       ),
                     ],
                   ),

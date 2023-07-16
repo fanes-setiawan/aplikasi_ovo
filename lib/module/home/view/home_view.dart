@@ -13,7 +13,7 @@ class HomeView extends StatefulWidget {
 
   Widget build(context, HomeController controller) {
     controller.view = this;
-    const collapsedBarHeight = 270.0;
+    // const collapsedBarHeight = 270.0;
     const expandedBarHeight = 260.0;
 
     return Scaffold(

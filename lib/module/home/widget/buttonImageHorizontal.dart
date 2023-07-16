@@ -62,18 +62,8 @@ class _ButtonImageHorizontalState extends State<ButtonImageHorizontal> {
                           borderRadius: BorderRadius.circular(10)),
                       child: Padding(
                         padding: const EdgeInsets.all(10),
-                        child: ElevatedButton(
-                          style: ElevatedButton.styleFrom(
-                            padding: EdgeInsets.zero,
-                            foregroundColor: Colors.blueGrey,
-                            animationDuration:
-                                const Duration(milliseconds: 1000),
-                            backgroundColor: Colors.transparent,
-                            splashFactory: InkSplash.splashFactory,
-                            shadowColor: Colors.transparent,
-                            elevation: 0.0,
-                          ),
-                          onPressed: () {},
+                        child: InkWell(
+                          onTap: () {},
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
