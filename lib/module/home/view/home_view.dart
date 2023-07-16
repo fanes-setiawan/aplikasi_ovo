@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:ovo/core.dart';
+import 'package:ovo/module/home/widget/buttonImageHorizontal.dart';
 import 'package:ovo/module/home/widget/carouselBanner.dart';
 import 'package:ovo/module/home/widget/tabBarMenu.dart';
 import '../controller/home_controller.dart';
@@ -11,7 +12,7 @@ class HomeView extends StatefulWidget {
   Widget build(context, HomeController controller) {
     controller.view = this;
     const collapsedBarHeight = 270.0;
-    const expandedBarHeight = 245.0;
+    const expandedBarHeight = 260.0;
 
     return Scaffold(
       backgroundColor: AppColors.slBarColor,
@@ -20,6 +21,7 @@ class HomeView extends StatefulWidget {
           CustomScrollView(
             slivers: [
               SliverAppBar(
+                stretch: true,
                 automaticallyImplyLeading: false,
                 expandedHeight: expandedBarHeight,
                 // collapsedHeight: collapsedBarHeight,
@@ -258,8 +260,8 @@ class HomeView extends StatefulWidget {
               SliverToBoxAdapter(
                 child: ConstrainedBox(
                   constraints: BoxConstraints(
-                    minHeight:
-                        MediaQuery.of(context).size.height - collapsedBarHeight,
+                    minHeight: MediaQuery.of(context).size.height -
+                        (expandedBarHeight + 30),
                   ),
                   child: Material(
                     elevation: 7,
@@ -270,18 +272,33 @@ class HomeView extends StatefulWidget {
                     ),
                     child: Column(
                       children: [
-                        SizedBox(height: 10),
-                        TabBarMenu(),
+                        SizedBox(height: 15.0),
                         Container(
-                          width: MediaQuery.of(context).size.width,
-                          height: 8,
-                          color: AppColors.greyBg,
-                        ),
-                        CarouselBanner(),
-                        Container(
-                          width: MediaQuery.of(context).size.width,
-                          height: 8,
-                          color: AppColors.greyBg,
+                          height: MediaQuery.of(context).size.height -
+                              (expandedBarHeight + 30),
+                          child: ListView(
+                            children: [
+                              // SizedBox(height: 10),
+                              TabBarMenu(),
+                              Container(
+                                width: MediaQuery.of(context).size.width,
+                                height: 8,
+                                color: AppColors.greyBg,
+                              ),
+                              CarouselBanner(),
+                              Container(
+                                width: MediaQuery.of(context).size.width,
+                                height: 8,
+                                color: AppColors.greyBg,
+                              ),
+                              ButtonImageHorizontal(),
+                              Container(
+                                width: MediaQuery.of(context).size.width,
+                                height: 8,
+                                color: AppColors.greyBg,
+                              ),
+                            ],
+                          ),
                         ),
                       ],
                     ),
