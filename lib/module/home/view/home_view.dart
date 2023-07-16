@@ -4,6 +4,7 @@ import 'package:ovo/core.dart';
 import 'package:ovo/module/home/widget/buttonImageHorizontal.dart';
 import 'package:ovo/module/home/widget/carouselBanner.dart';
 import 'package:ovo/module/home/widget/finansialCard.dart';
+import 'package:ovo/module/home/widget/learnOvo.dart';
 import 'package:ovo/module/home/widget/tabBarMenu.dart';
 import '../controller/home_controller.dart';
 
@@ -299,6 +300,12 @@ class HomeView extends StatefulWidget {
                                 color: AppColors.greyBg,
                               ),
                               FinancialCard(),
+                              Container(
+                                width: MediaQuery.of(context).size.width,
+                                height: 8,
+                                color: AppColors.greyBg,
+                              ),
+                              LearnOvo(),
                               Container(
                                 width: MediaQuery.of(context).size.width,
                                 height: 8,
