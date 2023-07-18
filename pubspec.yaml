@@ -35,6 +35,10 @@ dependencies:
     sdk: flutter
   flutter_custom_clippers: ^2.1.0
   flutter_svg: ^2.0.7
+  image_gallery_saver: ^2.0.3
+  image_picker: ^1.0.1
+  permission_handler: ^10.4.3
+  qr_code_scanner: ^1.0.1
 
 dev_dependencies:
   flutter_lints: ^2.0.0
