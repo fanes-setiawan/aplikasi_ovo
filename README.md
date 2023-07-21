@@ -1,8 +1,8 @@
+<p align="center">
+  <img src="assets/images/screenshot.jpg" alt="OVO App UI">
+</p>
+
 # UI Aplikasi OVO dengan Flutter
-
-![OVO App UI](assets/images/screenshot.jpg)
-
-## Deskripsi Proyek
 
 Proyek ini adalah replika UI aplikasi OVO menggunakan Flutter, sebuah framework pengembangan aplikasi mobile berbasis Dart. Aplikasi ini dibuat dengan arsitektur Model-View-Controller (MVC) untuk mengorganisasi kode dengan lebih terstruktur dan terpisah.
 
@@ -16,7 +16,11 @@ Klik tautan di bawah ini untuk melihat video demo Swagger UI aplikasi OVO menggu
 Klik di bawah ini untuk melihat video demo UI aplikasi OVO menggunakan Flutter.
 >>>>>>> de6efbd (add description to README.md)
 
-[![Swagger UI Video Demo](assets/images/thumbnail.jpg)](https://www.youtube.com/watch?v=mn4trIe5zQM)
+<p align="center">
+  <a href="https://www.youtube.com/watch?v=mn4trIe5zQM">
+    <img src="assets/images/thumbnail.jpg" alt="Swagger UI Video Demo" width="480">
+  </a>
+</p>
 
 ## Cara Menjalankan Proyek
 
