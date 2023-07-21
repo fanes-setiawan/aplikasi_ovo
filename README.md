@@ -1,16 +1,26 @@
-# ovo
+# UI Aplikasi OVO dengan Flutter
 
-A new Flutter project.
+![OVO App UI](screenshot.png)
 
-## Getting Started
+## Deskripsi Proyek
 
-This project is a starting point for a Flutter application.
+Proyek ini adalah replika UI aplikasi OVO menggunakan Flutter, sebuah framework pengembangan aplikasi mobile berbasis Dart. Aplikasi ini dibuat dengan arsitektur Model-View-Controller (MVC) untuk mengorganisasi kode dengan lebih terstruktur dan terpisah.
 
-A few resources to get you started if this is your first Flutter project:
+Dalam proyek ini, saya berfokus pada desain tampilan dan pengaturan antarmuka pengguna aplikasi OVO, seperti halaman Beranda, Finansial, Bayar, Kotak Masuk, dan Profil. Aplikasi ini hanya menampilkan desain statis tanpa interaksi dengan backend atau data API.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Video Demo
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Dalam video demo ini, Anda dapat melihat secara singkat tampilan antarmuka pengguna dari aplikasi OVO yang saya buat menggunakan Flutter.
+
+<video controls width="100%">
+    <source src="assets/video/demo.mp4" type="video/mp4">
+    Maaf, browser Anda tidak mendukung video.
+</video>
+
+## Cara Menjalankan Proyek
+
+Untuk menjalankan proyek ini, pastikan Anda telah menginstal Flutter SDK dan mengonfigurasi lingkungan kerja Anda. Lalu, jalankan perintah berikut pada terminal:
+
+```bash
+flutter pub get
+flutter run
