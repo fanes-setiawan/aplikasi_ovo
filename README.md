@@ -10,15 +10,7 @@ Dalam proyek ini, saya berfokus pada desain tampilan dan pengaturan antarmuka pe
 
 ## Video Demo
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-Klik tautan di bawah ini untuk melihat video demo Swagger UI aplikasi OVO menggunakan Flutter.
-=======
-Klik di bawah ini untuk melihat video demo UI aplikasi OVO menggunakan Flutter.
->>>>>>> de6efbd (add description to README.md)
-=======
 Klik di bawah ini untuk melihat video demo UI aplikasi OVO menggunakan Flutter:
->>>>>>> 17a1ea9 (update description to README.md)
 
 <p align="center">
   <a href="https://www.youtube.com/watch?v=mn4trIe5zQM">
