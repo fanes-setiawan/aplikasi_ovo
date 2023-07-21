@@ -10,7 +10,11 @@ Dalam proyek ini, saya berfokus pada desain tampilan dan pengaturan antarmuka pe
 
 ## Video Demo
 
+<<<<<<< HEAD
 Dalam video demo ini, Anda dapat melihat secara singkat tampilan antarmuka pengguna dari aplikasi OVO yang saya buat menggunakan Flutter.
+=======
+Klik di bawah ini untuk melihat video demo UI aplikasi OVO menggunakan Flutter:
+>>>>>>> db2773f (update description to README.md)
 
 <video controls width="100%">
     <source src="assets/video/demo.mp4" type="video/mp4">
