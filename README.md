@@ -1,6 +1,6 @@
 # UI Aplikasi OVO dengan Flutter
 
-![OVO App UI](screenshot.png)
+![OVO App UI](assets/images/screenshot.jpg)
 
 ## Deskripsi Proyek
 
@@ -10,21 +10,25 @@ Dalam proyek ini, saya berfokus pada desain tampilan dan pengaturan antarmuka pe
 
 ## Video Demo
 
-<<<<<<< HEAD
 Dalam video demo ini, Anda dapat melihat secara singkat tampilan antarmuka pengguna dari aplikasi OVO yang saya buat menggunakan Flutter.
-=======
-Klik di bawah ini untuk melihat video demo UI aplikasi OVO menggunakan Flutter:
->>>>>>> db2773f (update description to README.md)
 
-<video controls width="100%">
-    <source src="assets/video/demo.mp4" type="video/mp4">
-    Maaf, browser Anda tidak mendukung video.
-</video>
+[![OVO App UI Video Demo](assets/images/thumbnail.png)](https://youtu.be/mn4trIe5zQM)
+[Video Demo Link](https://youtu.be/mn4trIe5zQM)
 
 ## Cara Menjalankan Proyek
 
-Untuk menjalankan proyek ini, pastikan Anda telah menginstal Flutter SDK dan mengonfigurasi lingkungan kerja Anda. Lalu, jalankan perintah berikut pada terminal:
+Untuk menjalankan proyek ini, pastikan Anda telah menginstal Flutter SDK dan mengonfigurasi lingkungan kerja Anda. Berikut adalah langkah-langkahnya:
 
-```bash
-flutter pub get
-flutter run
+1. Pastikan Anda telah menginstal Flutter SDK dan mengatur variabel lingkungan PATH untuk Flutter di sistem Anda. Panduan instalasi Flutter dapat ditemukan di situs resmi Flutter.
+
+2. Buka terminal atau command prompt dan arahkan ke direktori proyek ini.
+
+3. Jalankan perintah `flutter pub get` untuk mengunduh dan menginstal dependensi proyek.
+
+4. Hubungkan perangkat fisik atau emulator Android/iOS ke komputer Anda.
+
+5. Jalankan perintah `flutter run` pada terminal untuk menjalankan aplikasi di perangkat terhubung atau emulator.
+
+   ```bash
+   flutter pub get
+   flutter run
