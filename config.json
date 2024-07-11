@@ -15,5 +15,11 @@
     ],
     "module_directory_name": "module",
     "experimental_mode": false,
-    "unfreezed": true
+    "learning_mode": false,
+    "unfreezed": true,
+    "use_cubit": false,
+    "ignore_core_generator_for_directories": [
+        "lib/model",
+        "lib/models"
+    ]
 }
